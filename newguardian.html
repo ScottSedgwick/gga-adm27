@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>GGA ADM27 Generator - New Parent/Guardian</title>
+    <script type="text/javascript" src="types.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <table>
+        <tr><td>Name:</td>              <td><input id="name" type="text"/></td>             </tr>
+        <tr><td>Address:</td>           <td><input id="address" type="text"/></td>          </tr>
+        <tr><td>State:</td>             <td><input id="state" type="text"/></td>            </tr>
+        <tr><td>Postcode:</td>          <td><input id="postcode" type="text"/></td>         </tr>
+        <tr><td>Business Phone:</td>    <td><input id="business_phone" type="text"/></td>   </tr>
+        <tr><td>Home Phone:</td>        <td><input id="home_phone" type="text"/></td>       </tr>
+        <tr><td>Mobile Phone:</td>      <td><input id="mobile_phone" type="text"/></td>     </tr>
+    </table>
+    <button onclick="submitGuardian(document);">Submit</button>
+    <button onclick="cancelNew();">Cancel</button>
+    <script>loadGuardians();</script>
+</body>
+</html>

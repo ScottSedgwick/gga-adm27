@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>GGA ADM27 Generator</title>
+  <script type="text/javascript" src="jspdf.min.js"></script>
+  <script type="text/javascript" src="types.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="tspdf.js"></script>
+  <script type="text/javascript" src="gga_pdf.js"></script>
+</head>
+<body>
+  <script>
+    checkLocalStorage();
+  </script>
+  <table>
+    <tr>
+      <td>
+        <select id="guides" size="20" style="width: 200px">
+        </select>
+      </td><td>
+        <select id="guardians" size="20" style="width: 200px">
+        </select>
+      </td><td>
+        <select id="activities" size="20" style="width: 200px">
+        </select>
+      </td>
+    </tr><tr>
+      <td>
+        <button onclick="newGuide();">New</button>
+        <button onclick="deleteGuide(document);">Delete</button>
+      </td>
+      <td>
+        <button onclick="newGuardian();">New</button>
+        <button onclick="deleteGuardian(document);">Delete</button>
+      </td>
+      <td>
+        <button onclick="newActivity();">New</button>
+        <button onclick="deleteActivity(document);">Delete</button>
+      </td>
+    </tr>
+  </table>
+  <button onclick="printDoc(document);">Print</button>
+
+  <script>
+    loadAll();
+    populateAll(document);
+  </script>
+</body>
+</html>
