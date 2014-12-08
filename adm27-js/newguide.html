@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>GGA ADM27 Generator - New Guide</title>
+    <script type="text/javascript" src="types.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <table>
+        <tr><td>Name:</td>                      <td><input id="name" type="text"/></td>                             </tr>
+        <tr><td>Unit:</td>                      <td><input id="unit" type="text"/></td>                             </tr>
+        <tr><td>Date of Birth:</td>             <td><input id="dob" type="date"/></td>                              </tr>
+        <tr><td>Medicare number:</td>           <td><input id="medicare_number" type="text"/></td>                  </tr>
+        <tr><td>Medicare reference number:</td> <td><input id="medicare_reference" type="text"/></td>               </tr>
+        <tr><td>Medicare address:</td>          <td><input id="medicare_address" type="text"/></td>                 </tr>
+        <tr><td>Private health cover?</td>      <td><input id="private_health_cover" type="checkbox"/></td>         </tr>
+        <tr><td>Private health fund:</td>       <td><input id="private_health_fund" type="text"/></td>              </tr>
+        <tr><td>Private health number:</td>     <td><input id="private_health_number" type="text"/></td>            </tr>
+        <tr><td>Ambulance cover?</td>           <td><input id="ambulance_cover" type="checkbox"/></td>              </tr>
+        <tr><td>Medical emergency contact:</td> <td><input id="medical_emergency_contact" type="text"/></td>        </tr>
+        <tr><td>Medical emergency phone:</td>   <td><input id="medical_emergency_phone" type="text"/></td>          </tr>
+        <tr><td>Medical emergency mobile:</td>  <td><input id="medical_emergency_mobile" type="text"/></td>         </tr>
+        <tr><td>Guide Member Number:</td>       <td><input id="guide_membership_number" type="text"/></td>          </tr>
+        <tr><td>Guide Member Expiry:</td>       <td><input id="guide_membership_expiry" type="date"/></td>          </tr>
+        <tr><td>Currently taking medication:</td><td><input id="taking_medication" type="checkbox"/></td>           </tr>
+        <tr><td>First aider information:</td>   <td><input id="first_aider_info" type="text"/></td>                 </tr>
+        <tr><td>Contact Lenses:</td>            <td><input id="contact_lenses" type="checkbox"/></td>               </tr>
+        <tr><td>Date of last tetanus shot:</td> <td><input id="last_tetanus_shot" type="date"/></td>                </tr>
+        <tr><td>Allergy Details:</td>           <td><input id="allergy_details" type="text"/></td>                  </tr>
+        <tr><td>Chronic illness:</td>           <td><input id="chronic_illness" type="checkbox"/></td>              </tr>
+        <tr><td>Chronic illness details:</td>   <td><input id="chronic_illness_details" type="text"/></td>          </tr>
+        <tr><td>Knows about menstruation?</td>  <td><input id="knows_about_menstruation" type="checkbox"/></td>     </tr>
+        <tr><td>Special food requirements:</td> <td><input id="special_food_requirements" type="text"/></td>        </tr>
+        <tr><td>Can take paracetamol?</td>      <td><input id="can_take_paracetamol" type="checkbox"/></td>         </tr>
+        <tr><td>Swimming distance:</td>         <td><input id="swimming_distance" type="text"/></td>                </tr>
+        <tr><td>Asthma?</td>                    <td><input id="suffer_asthma" type="checkbox"/></td>                </tr>
+        <tr><td>Bed wetting?</td>               <td><input id="suffer_bed_wetting" type="checkbox"/></td>           </tr>
+        <tr><td>Diabetes?</td>                  <td><input id="suffer_diabetes" type="checkbox"/></td>              </tr>
+        <tr><td>Epilepsy?</td>                  <td><input id="suffer_epilepsy" type="checkbox"/></td>              </tr>
+        <tr><td>Sleep walking?</td>             <td><input id="suffer_sleepwalking" type="checkbox"/></td>          </tr>
+        <tr><td>Fainting?</td>                  <td><input id="suffer_fainting" type="checkbox"/></td>              </tr>
+        <tr><td>Hay fever?</td>                 <td><input id="suffer_hay_fever" type="checkbox"/></td>             </tr>
+        <tr><td>Nose bleeds?</td>               <td><input id="suffer_nosebleeds" type="checkbox"/></td>            </tr>
+        <tr><td>Severe allergies?</td>          <td><input id="suffer_severe_allergies" type="checkbox"/></td>      </tr>
+        <tr><td>Activity exceptions:</td>       <td><input id="activity_exceptions" type="text"/></td>              </tr>
+    </table>
+    <button onclick="submitGuide(document);">Submit</button>
+    <button onclick="cancelNew();">Cancel</button>
+    <script>loadGuides();</script>
+</body>
+</html>
